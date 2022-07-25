@@ -5,7 +5,7 @@ const PORT = process.env.PORT || 3000;
 
 app.use(mylogger);
 
-//app.use(express.static("public"));
+app.use(express.static("public"));
 
 app.set("view engine", "ejs");
 
@@ -17,7 +17,7 @@ app.get("/", (req, res) => {
     switch(status_id){
         case 200:
             //res.send("こんにちは");
-            res.render("index", {text: "NodejsとExpress"});
+            res.render("idx", {text: "NodejsとExpress"});
 
 
 
